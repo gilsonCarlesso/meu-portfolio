@@ -1,0 +1,333 @@
+html, body{
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  margin: 0;
+  background: #0f172a;
+  color: white;
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+#projetos{
+  flex: 1;
+}
+
+header {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  background: #020617;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#typing{
+  width: 325px;
+  border-right: 5px solid transparent;
+  animation: aparecer 5s infinite, piscar 0.5s infinite;
+  animation-delay: 5s;
+}
+
+@keyframes piscar {
+  50% { border-color: white; }
+}
+
+@keyframes aparecer {
+  0%   { opacity: 0; }
+  50%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+section {
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: #38bdf8;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: white;
+}
+
+#sobre{
+    display: flex;
+    align-items: normal;
+}
+
+.img-perfil{
+    margin-top: 45px;
+    border-radius: 1000px;
+    width: 350px;
+    height: 350px;
+    transition: 0.2s;
+}
+
+.img-perfil:hover{
+  animation: pulse 2s infinite;
+}
+
+.div-sobre{
+    margin-left: 20px;
+}
+
+.btn-sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    background: #38bdf8;
+    position: -20px;
+    width: 150px;
+    transition: 0.2;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%{
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 aquamarine;
+  }
+  50%{
+    transform: scale(1.06);
+    box-shadow: 0 0 0 10px transparent;
+  }
+  100%{
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+.btn-sobre:hover{
+  background-color: #04DB4A;
+}
+
+.card{
+  background: rgb(255,255,255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 1%;
+  width: auto;
+  border-radius: 30px;
+  transition: 0.3s;
+  flex: 1 1 250px;
+  max-width: 800px;
+}
+
+.card h2{
+  padding-left: 2%;
+}
+
+.itens{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+ul{
+    display: inline-table;
+    align-items: center;
+    justify-content: center;
+    margin-right: 190px;
+}
+
+li{
+  padding-top: 15px;
+  transition: 0.3s;
+}
+li:hover{
+  transform: translateY(-10px);
+}
+
+.projetos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gw-tech{
+  transition: 0.2s;
+}
+
+.gw-tech:hover{
+  transform: scale(1.10);
+}
+
+.projeto-oficina{
+  transition: 0.2s;
+}
+
+.projeto-oficina:hover{
+  transform: scale(1.10);
+}
+
+/* ALINHAR PROJETOS*/
+div{
+  padding: 10px;
+}
+
+footer{
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+footer:hover{
+  box-shadow: 0 0 15px aqua;
+}
+
+footer span{
+  margin-left: 20px;
+  font-size: 20px;
+  text-shadow: 0 0 20px white;
+}
+
+.btn-social{
+  margin-right: 7%;
+  margin-left: 7%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  transition: 0.5s;
+}
+
+.btn-social:hover {
+    transform: scale(1.2);
+}
+
+i{
+  padding: 20px;
+  border-radius: 50%;
+}
+.email i{
+  background: linear-gradient(45deg, #EA4335, #FBBC05, #34A853, #4285F4);
+}
+
+.whatsapp i{
+  background: #00ff88;
+}
+
+.github i{
+  background: #181717;
+}
+
+.linkedin i{
+  background-color: #0A66C2;
+}
+
+.facebook i{
+  background: #1877F2;
+}
+
+header p{
+  margin-left: 26%;
+  margin-right: 26%;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  body{
+    font-size: 16px;
+  }
+
+  header p{
+    margin-left: 10rex;
+    margin-right: 10rex;
+  }
+
+  #sobre{
+    display: list-item;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .img-perfil{
+    width: 300px;
+    height: auto;
+  }
+
+  .botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card{
+    width: auto;
+  }
+
+
+  .itens{
+    display: flexbox;
+    justify-content: space-between;
+    align-items: flex-center;
+  }
+
+  ul{
+    margin-left: 2%;
+    margin-right: 20%;
+  }
+
+  section h2{
+    text-align: center;
+  }
+
+  .card h2{
+    text-align: start;
+    padding-left: 4%;
+    margin-bottom: 0;
+  }
+
+  .projetos{
+    display: grid;
+  }
+
+  .btn-social{
+    font-size: 20px;
+    padding: 0;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+
+@media (max-width: 1000px){
+  footer span{
+    display: none;
+  }
+}
