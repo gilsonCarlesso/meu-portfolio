@@ -23,6 +23,7 @@ header{
 }
 
 .image-header img{
+    width: 100px;
     border-radius: 100px;
 }
 
@@ -82,7 +83,7 @@ header{
     justify-content: center;
     align-items: center;
     padding-left: 10%;
-    margin-right: 10%;
+    padding-right: 10%;
     margin-top: 20px;
 }
 
@@ -119,20 +120,25 @@ header{
     header{
         display: flex;
         justify-content: flex-start;
+        width: 100%;
     }
-
+    
     .image-header img{
         width: 80px;
     }
 
     .title{
-        font-size: 13px;
+        font-size: 10px;
         position: absolute;
         left: 45%;
     }
 
     .title h1{
         width: 200px;
+    }
+
+    .title h5{
+        width: 500%;
     }
 
     .nav{
@@ -151,7 +157,7 @@ header{
     .menu-toggle{
         display: flex;
         position: absolute;
-        left: 92%;
+        left: 89%;
     }
 
     .nav.active{
