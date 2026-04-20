@@ -3,6 +3,8 @@ html, body{
   margin: 0;
 }
 body {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   font-family: Arial;
@@ -22,7 +24,6 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 10px;
   background: #020617;
   background-color: rgba(0, 0, 0, 0.75);
 }
@@ -157,6 +158,10 @@ li:hover{
   justify-content: center;
 }
 
+img{
+  width: 330px;
+}
+
 .text{
   display: flex;
   justify-content: center;
@@ -256,17 +261,25 @@ header p{
 
 @media (max-width: 768px) {
 
-  body{
-    font-size: 16px;
+  body, html{
+    font-size: 15px;
   }
 
   header p{
+    font-size: 13px;
     margin-left: 10rex;
     margin-right: 10rex;
   }
 
+  #typing{
+    width: 55%;
+    position: relative;
+    left: 4%;
+  }
+
   #sobre{
-    display: list-item;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -278,7 +291,7 @@ header p{
   }
   
   .img-perfil{
-    width: 300px;
+    width: 200px;
     height: auto;
   }
 
@@ -318,11 +331,29 @@ header p{
     display: grid;
   }
 
+  img{
+    width: 230px;
+  }
+
+  footer{
+    padding: 5px;
+  }
+
+  footer span{
+    margin: 0;
+    font-size: 0;
+  }
+
   .btn-social{
-    font-size: 20px;
+    font-size: 15px;
     padding: 0;
     margin-left: 4%;
     margin-right: 4%;
+  }
+
+  i{
+    padding: 10px;
+    border-radius: 50%;
   }
 }
 
